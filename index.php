@@ -9,8 +9,8 @@
 
                   <h2 class="center"> <?php									the_title(); ?></h2>
 <?php							the_post_thumbnail();?>
-								</a>
-                <?php the_content(); ?>
+
+                <?php the_excerpt(); ?></a>
                 <hr />
               <?php endwhile; } else {?> <p class="center">No posts here!</p> <?php }
       the_posts_pagination();?>
