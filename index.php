@@ -4,7 +4,7 @@
 <div class="posts-container">
 
 
-<?php  if ( have_posts() ) {		the_post();?>
+<?php  if ( have_posts() ) {	while ( have_posts() ) :	the_post();?>
 								<a href="<?php echo get_permalink(); ?>">
 
                   <h2 class="center"> <?php									the_title(); ?></h2>
@@ -12,9 +12,9 @@
 								</a>
                 <?php the_content(); ?>
                 <hr />
-                <?php } else {?> <p class="center">No posts here!</p> <?php }?>
+              <?php endwhile; } else {?> <p class="center">No posts here!</p> <?php }
+      the_posts_pagination();?>
     </div>
           <?php
-posts_nav_link('','Previous post','Next post');
 get_footer();
           ?>

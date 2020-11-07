@@ -15,6 +15,7 @@
                 <span class="prev-post"><?php previous_post_link(); ?><br /></span>
 <span class="next-post"><?php next_post_link(); ?></span><?php } else {?> <p class="center">No posts here!</p> <?php }?>
     </div>
+    <?php comment_form(); ?>
           <?php
 
 get_footer();
