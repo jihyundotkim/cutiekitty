@@ -212,6 +212,15 @@ textarea {
   padding: 0 10px;
 }
 
+textarea#comment {
+  display: block;
+}
+
+.commentlist {
+  list-style: none;
+  padding-left: 0;
+}
+
 .footer {
   display: none;
 }
